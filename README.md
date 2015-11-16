@@ -1,6 +1,6 @@
 About
 =====
-该平台为[ansible](https://github.com/ansible/ansible)系统的web程序
+该平台为[ansible](https://github.com/ansible/ansible)系统的web程序, CMBC
 
 
 Function

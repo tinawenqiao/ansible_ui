@@ -51,3 +51,6 @@ def settings(request):
     responseContext['lang']=request.LANGUAGE_CODE
     responseContext.update(csrf(request))
     return render_to_response('settings.html',responseContext,context_instance=RequestContext(request))
+
+def testgit():
+    pass
