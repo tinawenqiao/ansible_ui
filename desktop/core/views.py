@@ -52,6 +52,3 @@ def settings(request):
     responseContext.update(csrf(request))
     return render_to_response('settings.html',responseContext,context_instance=RequestContext(request))
 
-
-def testgithub():
-    pass
