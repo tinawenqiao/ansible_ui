@@ -34,7 +34,7 @@ def render_json(data):
         indent = 0
     json = simplejson.dumps(data, indent)
 
-    return HttpResponse(json, mimetype='application/json')
+    return HttpResponse(json, content_type='application/json')
 
 
 

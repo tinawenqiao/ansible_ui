@@ -130,7 +130,7 @@ MIDDLEWARE_CLASSES = (
     'desktop.core.middleware.LoginAndPermissionMiddleware',
     'desktop.core.middleware.ExceptionMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.transaction.TransactionMiddleware',
+    #'django.middleware.transaction.TransactionMiddleware',
     'desktop.core.pagination.middleware.PaginationMiddleware',
     # 'debug_toolbar.middleware.DebugToolbarMiddleware'
     )
@@ -165,7 +165,7 @@ INSTALLED_APPS = (
     'desktop.core.pagination',
 #    # Uncomment the next line to enable admin documentation:
 #    'django.contrib.admindocs',
-    'south',
+#    'south',
     'kombu.transport.django',
     'djcelery',
     'desktop.apps.ansible',

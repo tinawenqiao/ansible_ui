@@ -44,7 +44,7 @@ class PrimordialModel(models.Model):
         abstract = True
 
     description   = models.TextField(blank=True, default='')
-    created_by    = models.ForeignKey('auth.User', on_delete=SET_NULL, null=True, related_name='%s(class)s_created', editable=False) # not blank=False on purpose for admin!
+    created_by    = models.ForeignKey('auth.User', on_delete=SET_NULL, null=True, related_name='%(class)s_created', editable=False) # not blank=False on purpose for admin!
     creation_date = models.DateTimeField(auto_now_add=True)
     #tags          = models.ManyToManyField('Tag', related_name='%(class)s_by_tag', blank=True)
     #audit_trail   = models.ManyToManyField('AuditTrail', related_name='%(class)s_by_audit_trail', blank=True)
